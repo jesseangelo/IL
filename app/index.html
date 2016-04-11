@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IssueLaunch</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-fixed-top header">
+      <div class="header-main">
+        <span class="header-breadcrumb"></span>
+        <div class="header-side-tab-nav">
+          <div class="icon-IL-nav-button icon"></div>
+        </div>
+      </div>
+      <div class="header-sub">
+        <div class="header-sub-nav">Deal Details</div>
+      </div>
+    </nav>
+
+<!-- PANE START -->
+    <section class="pane">
+      <div class="pane-nav">
+        <ul class="nav nav-tabs">
+          <li id="messageTab" class="uib-tab active">
+            <a href="" ng-click="select()" uib-tab-heading-transclude="">
+              <span class="fa fa-bullhorn">&nbsp;</span></a>
+          </li>
+          <li id="addFieldsTab" class="uib-tab">
+            <a href="" >
+              <span class="fa fa-plus">&nbsp;</span>
+            </a>
+          </li>
+          <li id="historyTab" class="uib-tab">
+            <a href="" >
+              <span class="fa fa-clock-o">&nbsp;</span></a>
+          </li>
+          <li id="cusipTab" >
+            <a href="" >
+              <span class="fa fa-globe">&nbsp;</span>
+            </a>
+          </li>
+          <li id="deleteTab" class="uib-tab">
+            <a href="">
+              <span class="fa fa-trash-o">&nbsp;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="pane-body">
+        <div class="pane-header">
+          <div class="pane-tabs clearfix">
+            <div class="pane-tab pane-tab-active"><a>Messages</a></div>
+            <div class="pane-tab"><a>Publish to Investors</a></div>
+            <div class="pane-tab"><a>Send to IssueNet</a></div> 
+          </div>
+          <div class="pane-container">
+            <div class="form-row">
+              <div class="form-multi-select">
+                <label class="form-placeholder-label" for="">Drop Down / Multiselect</label>
+                <span class="fa fa-angle-down form-input-fa-right"></span>
+                <div class="multi-select-selects"></div>                
+                <div class="form-multi-select-dropdown" id="rating">
+                  <div class="form-input multi-select-checkbox">
+                    <input id="aaa" type="checkbox" name="aaa"/>
+                    <label for="aaa" class="form-checkbox">AAA</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="aa1" type="checkbox" name="aa1"/>
+                    <label for="aa1" class="form-checkbox">Aa1</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="aa2" type="checkbox" name="aa2"/>
+                    <label for="aa2" class="form-checkbox">Aa2</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="aa3" type="checkbox" name="aa3"/>
+                    <label for="aa3" class="form-checkbox">Aa3</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="a1" type="checkbox" name="a1"/>
+                    <label for="a1" class="form-checkbox">A1</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="a2" type="checkbox" name="a2"/>
+                    <label for="a2" class="form-checkbox">A2</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="a3" type="checkbox" name="a3"/>
+                    <label for="a3" class="form-checkbox">A3</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="baa1" type="checkbox" name="baa1"/>
+                    <label for="baa1" class="form-checkbox">Baa1</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="baa2" type="checkbox" name="baa2"/>
+                    <label for="baa2" class="form-checkbox">Baa2</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="baa3" type="checkbox" name="baa3"/>
+                    <label for="baa3" class="form-checkbox">Baa3</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="ba1" type="checkbox" name="ba1"/>
+                    <label for="ba1" class="form-checkbox">Ba1</label>
+                  </div>
+                  <div class="form-input multi-select-checkbox">
+                    <input id="ba2" type="checkbox" name="ba2"/>
+                    <label for="ba2" class="form-checkbox">Ba2</label>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+            
+        <div class="pane-content">
+          <div class="pane-container scrollbar">
+          En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque, por conjeturas verosímiles, se deja entender que se llamaba Quejana. Pero esto importa poco a nuestro cuento; basta que en la narración dél no se salga un punto de la verdad. 
+
+          Es, pues, de saber que este sobredicho hidalgo, los ratos que estaba ocioso, que eran los más del año, se daba a leer libros de caballerías, con tanta afición y gusto, que olvidó casi de todo punto el ejercicio de la caza, y aun la administración de su hacienda. Y llegó a tanto su curiosidad y desatino en esto, que vendió muchas hanegas de tierra de sembradura para comprar libros de caballerías en que leer, y así, llevó a su casa todos cuantos pudo haber dellos; y de todos, ningunos le parecían tan bien como los que compuso el famoso Feliciano de Silva, porque la claridad de su prosa y aquellas entricadas razones suyas le parecían de perlas, y más cuando llegaba a leer aquellos requiebros y cartas de desafíos, donde en muchas partes hallaba escrito: La razón de la sinrazón que a mi razón se hace, de tal manera mi razón enflaquece, que con razón me quejo de la vuestra fermosura. Y también cuando leía: ...los altos cielos que de vuestra divinidad divinamente con las estrellas os fortifican, y os hacen merecedora del merecimiento que merece la vuestra grandeza. 
+
+          Con estas razones perdía el pobre caballero el juicio, y desvelábase por entenderlas y desentrañarles el sentido, que no se lo sacara ni las entendiera el mesmo Aristóteles, si resucitara para sólo ello. No estaba muy bien con las heridas que don Belianís daba y recebía, porque se imaginaba que, por grandes maestros que le hubiesen curado, no dejaría de tener el rostro y todo el cuerpo lleno de cicatrices y señales. Pero, con todo, alababa en su autor aquel acabar su libro con la promesa de aquella inacabable aventura, y muchas veces le vino deseo de tomar la pluma y dalle fin al pie de la letra, como allí se promete; y sin duda alguna lo hiciera, y aun saliera con ello, si otros mayores y continuos pensamientos no se lo estorbaran. Tuvo muchas veces competencia con el cura de su lugar -que era hombre docto, graduado en Sigüenza-, sobre cuál había sido mejor caballero: Palmerín de Ingalaterra o Amadís de Gaula; mas maese Nicolás, barbero del mesmo pueblo, decía que ninguno llegaba al Caballero del Febo, y que si alguno se le podía comparar, era don Galaor, hermano de Amadís de Gaula, porque tenía muy acomodada condición para todo; que no era caballero melindroso, ni tan llorón como su hermano, y que en lo de la valentía no le iba en zaga. 
+
+          En resolución, él se enfrascó tanto en su letura, que se le pasaban las noches leyendo de claro en claro, y los días de turbio en turbio; y así, del poco dormir y del mucho leer, se le secó el celebro, de manera que vino a perder el juicio. Llenósele la fantasía de todo aquello que leía en los libros, así de encantamentos como de pendencias, batallas, desafíos, heridas, requiebros, amores, tormentas y disparates imposibles; y asentósele de tal modo en la imaginación que era verdad toda aquella máquina de aquellas sonadas soñadas invenciones que leía, que para él no había otra historia más cierta en el mundo. Decía él que el Cid Ruy Díaz había sido muy buen caballero, pero que no tenía que ver con el Caballero de la Ardiente Espada, que de sólo un revés había partido por medio dos fieros y descomunales gigantes. Mejor estaba con Bernardo del Carpio, porque en Roncesvalles había muerto a Roldán el encantado, valiéndose de la industria de Hércules, cuando ahogó a Anteo, el hijo de la Tierra, entre los brazos. Decía mucho bien del gigante Morgante, porque, con ser de aquella generación gigantea, que todos son soberbios y descomedidos, él solo era afable y bien criado. Pero, sobre todos, estaba bien con Reinaldos de Montalbán, y más cuando le veía salir de su castillo y robar cuantos topaba, y cuando en allende robó aquel ídolo de Mahoma que era todo de oro, según dice su historia. Diera él, por dar una mano de coces al traidor de Galalón, al ama que tenía, y aun a su sobrina de añadidura. 
+
+          En efeto, rematado ya su juicio, vino a dar en el más estraño pensamiento que jamás dio loco en el mundo; y fue que le pareció convenible y necesario, así para el aumento de su honra como para el servicio de su república, hacerse caballero andante, y irse por todo el mundo con sus armas y caballo a buscar las aventuras y a ejercitarse en todo aquello que él había leído que los caballeros andantes se ejercitaban, deshaciendo todo género de agravio, y poniéndose en ocasiones y peligros donde, acabándolos, cobrase eterno nombre y fama. Imaginábase el pobre ya coronado por el valor de su brazo, por lo menos, del imperio de Trapisonda; y así, con estos tan agradables pensamientos, llevado del estraño gusto que en ellos sentía, se dio priesa a poner en efeto lo que deseaba. 
+        </div>
+        </div>
+        <div class="pane-footer">
+          <div class="pane-container">
+            <a class="btn pane-footer-button">Copy To Clipboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="wrapper">
+      <div class="form">
+        <div class="form-header container">
+          <span class="form-headline pull-left">
+            Deal Terms
+          </span>
+          <div class="pull-right">
+            <button autocomplete="off" data-ng-show="trancheNameSet" type="button" class="btn btn-default btn-header ">&nbsp;<i class="fa fa-plus"></i> Add Tranche (3)&nbsp;</button>
+          </div>
+        </div>
+
+        <div class="form-row">            
+          <div class="form-input ptest">
+            <label class="form-placeholder-label" for="issuerShortName">Issuer Short Name</label>
+            <input autocomplete="off" class="form-text-input" id="issuerShortName" name="issuerShortName" type="text"/>
+          </div>
+          <div class="form-input">
+            <label class="form-placeholder-label" for="issuerLongName">Issuer Long Name</label>
+            <input autocomplete="off" class="form-text-input" id="issuerLongName" name="issuerLongName" type="text" value="Long Name" >
+          </div>
+        </div>
+        <!-- end form row -->        
+
+        <div class="form-row">
+          <div class="form-input">
+            <label class="form-placeholder-label" for="issuerMoodyName">Issuer Moody's Rating</label>
+            <input autocomplete="off" class="form-text-input form-input-select" id="issuerRatingMoodysId" name="issuerMoodyName" type="text">
+          </div>          
+        </div>
+        <!-- end form row -->  
+
+        <div class="form-row">
+          <div class="form-input"> 
+            <input id="box1" type="checkbox" checked/>
+            <label for="box1" class="form-checkbox">Checked </label>     
+          </div>
+          <div class="form-input"> 
+            <input id="box2" type="checkbox"/>
+            <label for="box2" class="form-checkbox">Unchecked </label>
+          </div>
+          <div class="form-input"> 
+            <input id="box3" type="checkbox" disabled/>
+            <label for="box3" class="form-checkbox">Disabled </label>
+          </div>
+        </div>
+        <!-- end form row -->  
+
+        <div class="form-row">
+          <div class="form-input form-required">
+            <label class="form-placeholder-label" for="">Issuer Short Name</label>
+            <input autocomplete="off" class="form-text-input" id="issuerShortName" name="issuerShortName" type="text">
+          </div>          
+        </div>
+          <!-- end form row -->
+        
+        <div class="form-row">
+          <div class="form-input">
+            <label class="form-placeholder-label" for="marketing">Marketing</label>
+            <textarea class="form-textarea textarea-scrollbar scrollbar-outer" id="marketing" name="marketing">
+              En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque, por conjeturas verosímiles, se deja entender que se llamaba Quejana. Pero esto importa poco a nuestro cuento; basta que en la narración dél no se salga un punto de la verdad.
+            </textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-input">
+            <label class="form-placeholder-label" for="">Plain Entry</label>
+            <input autocomplete="off" class="form-text-input" id="issuerShortName" name="issuerShortName" type="text">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-multi-select">
+            <label class="form-placeholder-label" for="">Drop Down / Multiselect</label>
+            <span class="fa fa-angle-down form-input-fa-right"></span>
+            <div class="multi-select-selects"></div>
+            <div class="form-multi-select-dropdown" id="rating">
+              <div class="form-input multi-select-checkbox">
+                <input id="aaa" type="checkbox" name="aaa"/>
+                <label for="aaa" class="form-checkbox">AAA</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="aa1" type="checkbox" name="aa1"/>
+                <label for="aa1" class="form-checkbox">Aa1</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="aa2" type="checkbox" name="aa2"/>
+                <label for="aa2" class="form-checkbox">Aa2</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="aa3" type="checkbox" name="aa3"/>
+                <label for="aa3" class="form-checkbox">Aa3</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="a1" type="checkbox" name="a1"/>
+                <label for="a1" class="form-checkbox">A1</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="a2" type="checkbox" name="a2"/>
+                <label for="a2" class="form-checkbox">A2</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="a3" type="checkbox" name="a3"/>
+                <label for="a3" class="form-checkbox">A3</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="baa1" type="checkbox" name="baa1"/>
+                <label for="baa1" class="form-checkbox">Baa1</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="baa2" type="checkbox" name="baa2"/>
+                <label for="baa2" class="form-checkbox">Baa2</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="baa3" type="checkbox" name="baa3"/>
+                <label for="baa3" class="form-checkbox">Baa3</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="ba1" type="checkbox" name="ba1"/>
+                <label for="ba1" class="form-checkbox">Ba1</label>
+              </div>
+              <div class="form-input multi-select-checkbox">
+                <input id="ba2" type="checkbox" name="ba2"/>
+                <label for="ba2" class="form-checkbox">Ba2</label>
+              </div>                 
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-input">
+            <label class="form-placeholder-label" for="">Form Altering</label>
+            <input autocomplete="off" class="form-text-input-with-icon" id="issuerShortName" name="issuerShortName" type="text">
+            <span class="fa fa-code-fork form-input-fa-right"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-input">
+            <div class="form-add-edit-drops">
+              <span class="fa fa-pencil"></span>
+              <p class="form-add-edit-drops-caption">Add/Edit Drops</p>
+          </div>
+        </div>
+        <!-- end form -->
+       </div>
+     </div>
+    
+      <div class="form form-docs">
+        <div class="form-docs-header container">
+          <div class="form-docs-title form-headline pull-left">Documents</div>
+          <div class="form-docs-init pull-right" id="div1" ondrop="drop(event)">
+            Drag and Drop files here or <a href="#" class="browse">Browse</a> from your computer
+            <form><input type="file" class="box__file"></form>
+          </div>
+        </div>
+
+        <div class="form-docs-no-docs" style="display: none;">
+          No documents have been added yet.
+        </div>
+
+        <div class="form-docs-list">
+          
+        </div>        
+      <!-- end form -->
+
+      <div class="form form-tranche">
+        <div class="form-tranche-header container">
+          Tranche
+        </div>
+      </div>
+      <!-- end form -->
+
+    </div>
+
+    <div class="dragDropTarget">      
+      <div class="msg">
+        <span class="fa fa-cloud"></span>
+        <div class="">
+          <span class="fa fa-files-o"></span>
+          <span class="fa fa-arrow-up"></span>
+        </div>
+        <p class="line1">DROP YOUR FILES ANYWHERE TO UPLOAD</p>
+        <p class="line2">PDF or DOC - 15MB max</p>
+      </div>
+      <div class="bg"></div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <!--<script src="scripts/main.js"></script>-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/jquery.scrollbar.min.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.form-multi-select
+  @extend .form-input
+  cursor: pointer
+
+.form-multi-select-dropdown
+  min-width: 230px
+  max-height: 200px
+  overflow-y: auto
+  font-size: 0.938em
+  background: #fff
+  pointer-events: none
+  opacity: 0
+  z-index: 999
+  position: absolute
+  margin-top: 1.75em;
+  margin-left: -.9em;
+  border-top: 0.063em solid #d6d6d6
+  border-bottom: 0.063em solid #d6d6d6
+  border-right: 0.063em solid #d6d6d6
+  transition: all .4s
+  &.open
+    box-shadow: inset 0 0 10px #000000
+    -webkit-box-shadow: inset 0 0 10px #000000
+    opacity: 1
+    pointer-events: all
+
+.form-multi-select-dropdown .form-checkbox,
+.multi-select-checkbox.form-input
+  cursor: pointer
+
+/* this should universally be cleaned up */
+.multi-select-checkbox
+  input[type=checkbox], .form-checkbox
+    
+
+.multi-select-checkbox:first-child
+  margin-top: -1px
+
+//This is very much based on the default
+.multi-select-checkbox input[type=checkbox]:checked + label.form-checkbox:before 
+  content: "\f00c"  
+  color: #007FD9
+  background-color: white
+  border: 0.063em solid #d6d6d6
+
+.multi-select-checkbox:hover
+  background-color: #007FD9
+  color: white
+  label
+    color: white
+  input[type=checkbox] + label.form-checkbox:before 
+    background-color: white
+
+.form-select-dropdown-selected 
+  cursor: pointer
+  padding: 4px
+  background-color: #0080FF
+  color: #fff
+  width: 102%
+
+.multi-select-selects
+  float: left

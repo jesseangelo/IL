@@ -1,0 +1,45 @@
+@import vars
+
+.form-row > .form-input:nth-child(1):nth-last-child(2) 
+  border-left: $form-input-border
+  display: inline-block
+  margin-right: 0
+  width: 50%
+
+.form-row > div:last-child 
+  border-right: $form-input-border
+
+.form-row-group:nth-child(1):nth-last-child(3),
+.form-row-group:nth-child(2):nth-last-child(2),
+.form-row-group:nth-child(3):nth-last-child(1) 
+  border-right: $form-input-border
+  display: inline-block
+  margin-right: 0
+  width: 33.333333333%
+
+/* do we need group? */
+.form-row > div.form-input:nth-child(1):nth-last-child(2),
+.form-row > div.form-input:nth-child(2):nth-last-child(1),
+.form-row-group > div.form-input:nth-child(1):nth-last-child(2),
+.form-row-group > div.form-input:nth-child(2):nth-last-child(1) 
+  width: 50%
+  display: inline-block
+  margin-right: 0
+  white-space: nowrap
+
+
+.form-row > div.form-input:nth-child(1):nth-last-child(3), 
+.form-row > div.form-input:nth-child(2):nth-last-child(2), 
+.form-row > div.form-input:nth-child(3):nth-last-child(1) 
+  display: inline-block
+  margin-right: 0
+  width: 33.333333333%
+
+.form-row > div.form-input:nth-child(1):nth-last-child(4), 
+.form-row > div.form-input:nth-child(2):nth-last-child(3), 
+.form-row > div.form-input:nth-child(3):nth-last-child(2),
+.form-row > div.form-input:nth-child(4):nth-last-child(1) 
+  border-right: $form-input-border
+  display: inline-block
+  margin-right: 0
+  width: 25%

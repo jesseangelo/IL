@@ -1,0 +1,139 @@
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+// endbower
+
+$icon-font-path: '../fonts/'
+@import vars
+@import base
+@import mixins
+@import fonts
+@import layout
+@import formdocs
+@import buttons
+@import textinput
+@import checkbox
+@import textbox
+@import multiselect
+@import addEdit
+@import dragDrop
+@import pane
+@import util
+@import textarea-scrollbar
+//@import iconsdatasvg
+
+
+.container
+  padding-left: .75em
+  padding-right: .75em
+
+.header-main
+  background-color: #1184db
+  color: #ddd
+  padding: 1.65em
+
+.header-breadcrumb
+  font-size: .75em
+
+.header-side-tab-nav
+  float: right
+  .icon
+    width: 1.875em
+    height: 1.875em
+
+.header-sub
+  background-color: #515151
+  .header-sub-nav
+    font-size: 0.75em
+    padding: 0.535em
+    color: white
+    font-weight: bold
+
+label  
+  font-weight: normal
+  margin: 0
+
+input[type=text]
+  pointer-events: none
+
+.form 
+  width: $form-width
+  margin-bottom: $form-margin-bottom
+
+.form-header 
+  width: $form-width
+  margin-top: $form-header-margin-top
+  background-color: $base-background-color
+
+
+.form-row 
+  white-space: nowrap
+  font-size: 0
+
+
+.form-required 
+  padding-right: 0
+  background-color: $form-input-required-background-color
+
+.form-required .form-placeholder-label:after 
+  content: ' *'
+  color: red
+
+
+.form-headline 
+  font-size: $form-headline-font-size
+  color: $form-headline-color
+  margin-bottom: 1.625rem
+
+  
+.form-input 
+  min-height: $form-input-height
+  padding: $form-input-padding
+  border-bottom: $form-input-border
+  border-left: $form-input-border
+  border-top: $form-input-border
+  margin-bottom: -1px
+  white-space: normal
+  font-size: $form-input-font-size
+  border-radius: $form-input-border-radius
+  background-color: $form-input-background-color
+  overflow: hidden
+  cursor: text
+
+
+.form-input-active 
+  /*border: $form-input-active-border*/
+  box-shadow: 0px 0px 0px 1px #016AD2 inset
+  transition: $transition-200-eio
+
+.form-placeholder-label 
+  color: $form-placeholder-label-color
+  font-size: $form-placeholder-label-font-size
+  font-weight: $form-placeholder-label-font-weight
+  height: $form-placeholder-label-height
+  display: block
+  +transform($translate-01em)
+  transition: all 200ms
+  margin: 0
+  text-align: $form-placeholder-text-align
+  pointer-events: none
+  margin-bottom: $form-placeholder-label-margin-bottom
+  user-select: none
+
+/* do we need persist? */
+.form-placeholder-label-active,
+.form-placeholder-label-persist 
+  -webkit-transform: translate(0, 0em)
+  -moz-transform: translate(0, 0em)
+  -o-transform: translate(0, 0em)
+  -ms-transform: translate(0, 0em)
+  transform: translate(0, 0em)
+  font-size: 0.563em
+  color: #aaa
+  line-height: 15px
+
+
+/* not exactly... */
+.form-input-active .form-input-marker
+  border-top: 1px solid #016AD2
+  box-shadow: 1px -1px 0px 0px #016AD2 inset;

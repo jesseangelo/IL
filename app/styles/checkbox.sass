@@ -1,0 +1,31 @@
+/*** custom checkboxes ***/
+
+input[type=checkbox]  
+  display: none  /* to hide the checkbox itself */
+
+input[type=checkbox][disabled] + label.form-checkbox:before 
+  background-color: #888
+  border: 0.063em solid #083F7E
+  
+.form-checkbox  
+  margin-top: 9px
+  color: #878787
+  font-weight: normal
+  font-size: 0.75em
+
+input[type=checkbox]:checked + label.form-checkbox:before 
+  background-color: #146ED2
+  border: 0.063em solid #083F7E
+
+input[type=checkbox] + label.form-checkbox:before 
+  font-family: FontAwesome
+  font-weight: normal
+  font-size: 1.25em
+  display: inline
+  content: "\f00c"
+  border-radius: 3px
+  border: 0.063em solid #d6d6d6
+  margin: .5em .5em 0 0
+  padding: 1px
+  color: white
+

@@ -1,0 +1,22 @@
+@import vars
+  
+.form-text-input 
+  background-color: $form-text-input-background-color
+  color: $form-text-input-color
+  font-face: $base-font-face
+  font-size: $form-text-input-font-size
+  border: none
+  padding: 0
+  vertical-align: text-bottom
+  outline: none
+  width: 100%
+  pointer-events: none
+  text-overflow: ellipsis
+
+.form-input-active .form-text-input
+  pointer-events: all
+
+.form-text-input-with-icon
+  margin-right: -1em
+  padding-right: 1.5em
+  @extend .form-text-input

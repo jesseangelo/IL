@@ -1,0 +1,54 @@
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="c1-fill" x1="0.46094" y1="0.97656" x2="0.48438" y2="0.01563">
+        <stop offset="0" stop-color="#aaaaaa"/>
+        <stop offset="1" stop-color="#222222"/>
+      </linearGradient>
+      <!-- dark highlight off for hover -->
+      <linearGradient id="c2-fill" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+        <stop offset="0" stop-color="#4e4e4e"/>
+        <stop offset="1" stop-color="#000000"/>
+      </linearGradient>
+      <filter id="c2-blur" height="200%" width="200%" y="-50%" x="-50%" >
+        <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+      </filter>
+      <linearGradient id="c2-active" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+       <stop offset="0" stop-color="#4e4e4e"/>
+       <stop offset="1" stop-color="#008c8c"/>
+      </linearGradient>
+      <linearGradient id="c3-fill" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+        <stop offset="0" stop-color="#aaaaaa"/>
+        <stop offset="2" stop-color="#444444"/>
+      </linearGradient>      
+      <linearGradient id="c4-fill" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+        <stop offset="0" stop-color="#dddddd"/>
+        <stop offset="1" stop-color="#868686"/>
+      </linearGradient>
+      <linearGradient id="c4-active" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+       <stop offset="0" stop-color="#99ffff"/>
+       <stop offset="1" stop-color="#008c8c"/>
+      </linearGradient>
+      <linearGradient id="c5-fill" x1="0.49219" y1="0.00391" x2="0.48047" y2="0.98438">
+        <stop offset="0" stop-color="#999999"/>
+        <stop offset="1" stop-color="#cccccc"/>
+      </linearGradient>      
+      <radialGradient id="c6-fill" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#ffffff"/>
+      </radialGradient>      
+      <filter id="c6-blur" height="200%" width="200%" y="-50%" x="-50%">
+       <feGaussianBlur stdDeviation="5" in="SourceGraphic"/>
+      </filter>      
+    </defs>
+    
+    <symbol id="side-tab-nav" >
+      <circle id="c1" fill="url(#c1-fill)" cx="40" cy="40" r="40"/>
+      <circle id="c2" class="hide-hover" fill="url(#c2-fill)" cx="39.5" cy="46.74726" r="31" filter="url(#c2-blur)" />
+      <circle id="c2a" class="only-active" fill="url(#c2-active)" cx="39.5" cy="46.74726" r="31" filter="url(#c2-blur)"/>
+      <circle id="c3" fill="url(#c3-fill)" cx="40" cy="40" r="34" />
+      <circle id="c4" fill="url(#c4-fill)" cx="39.93227" cy="39.93228" r="32"/>
+      <circle id="c4a" class="only-active" fill="url(#c4-active)" cx="39.93227" cy="39.93228" r="32" />
+      <circle id="c5" fill="url(#c5-fill)" r="28.99999" cy="39.86455" cx="40"/>
+      <circle id="c6" fill="url(#c6-fill)" cx="50.71181" cy="51.71182" r="12" filter="url(#c6-blur)"/>
+     </symbol>
+  </svg>

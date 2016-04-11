@@ -1,0 +1,81 @@
+@import mixins
+@import fonts
+
+.pane
+  position: fixed
+  right: 0
+  bottom: 0
+  top: 5.2em
+  width: 32.313em  
+  margin-bottom: 0
+  z-index: 1040
+  background-color: white
+
+  .pane-body
+    box-shadow: -4px 12px 12px #777;
+    height: 100%    
+    
+  .pane-tab
+    float: left
+    width: 33.3%
+    text-align: center
+    height: 2.5em
+    background-color: #ddd
+    a
+      color: #555
+      font-size: 0.75em
+      display: block
+      +vertical-align()
+
+  .pane-tab:not(:first-child)
+    border-left: 1px solid #aeaeae;
+
+  .pane-tab-active
+    background-color: white
+    color: #404040
+
+  .pane-tab-active:first-child
+
+
+  .pane-header
+    height: 7.5em
+    border-bottom: 0.063em #ddd solid
+  .pane-content
+    overflow-y: scroll
+    height: calc(100vh - 320px)
+    font-family: input
+    font-size: 0.688em
+
+  .pane-footer
+    height: 4.563em
+    position: absolute
+    bottom: 0
+    width: 32.313em
+    border-top: 0.063em #ddd solid
+
+  .pane-footer-button
+    width: 18.750em
+    border: 0.063em solid #d3d3d3
+    display: block
+    font-size: 0.813em
+    color: #999
+    margin: 0 auto
+    background: #fefefe
+    background: -moz-linear-gradient(top,  #fefefe 0%, #f6f6f6 100%)
+    background: -webkit-linear-gradient(top,  #fefefe 0%,#f6f6f6 100%)
+    background: linear-gradient(to bottom,  #fefefe 0%,#f6f6f6 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f6f6f6',GradientType=0 )
+    &:hover 
+      background: white
+    &:disabled
+      color: #ddd
+    &:active
+      background-color: #eee
+      box-shadow: none
+  
+  .pane-footer .pane-container
+    +vertical-align()
+
+  .pane-container
+    padding: 1em 2em
+    
