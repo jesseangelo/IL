@@ -28,40 +28,41 @@
         </div>
       </div>
       <div class="header-sub">
-        <div class="header-sub-nav">Deal Details</div>
+        <div class="header-sub-nav">Issue Launch</div>
+      </div>
+      <div class="header-deal-menu clearfix">        
+        <div class="pane-nav">
+          <ul class="nav nav-tabs">
+            <li id="messageTab" class=" active">
+              <a href="" ng-click="select()" uib-tab-heading-transclude="">
+                <span class="fa fa-bullhorn">&nbsp;</span></a>
+            </li>
+            <li id="addFieldsTab" class="uib-tab">
+              <a href="" >
+                <span class="fa fa-plus">&nbsp;</span>
+              </a>
+            </li>
+            <li id="historyTab" class="uib-tab">
+              <a href="" >
+                <span class="fa fa-clock-o">&nbsp;</span></a>
+            </li>
+            <li id="cusipTab" >
+              <a href="" >
+                <span class="fa fa-globe">&nbsp;</span>
+              </a>
+            </li>
+            <li id="deleteTab" class="uib-tab">
+              <a href="">
+                <span class="fa fa-trash-o">&nbsp;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-<!-- PANE START -->
-    <section class="pane">
-      <div class="pane-nav">
-        <ul class="nav nav-tabs">
-          <li id="messageTab" class="uib-tab active">
-            <a href="" ng-click="select()" uib-tab-heading-transclude="">
-              <span class="fa fa-bullhorn">&nbsp;</span></a>
-          </li>
-          <li id="addFieldsTab" class="uib-tab">
-            <a href="" >
-              <span class="fa fa-plus">&nbsp;</span>
-            </a>
-          </li>
-          <li id="historyTab" class="uib-tab">
-            <a href="" >
-              <span class="fa fa-clock-o">&nbsp;</span></a>
-          </li>
-          <li id="cusipTab" >
-            <a href="" >
-              <span class="fa fa-globe">&nbsp;</span>
-            </a>
-          </li>
-          <li id="deleteTab" class="uib-tab">
-            <a href="">
-              <span class="fa fa-trash-o">&nbsp;</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
+    <!-- PANE START -->
+    <section class="pane">      
       <div class="pane-body">
         <div class="pane-header">
           <div class="pane-tabs clearfix">
@@ -335,6 +336,7 @@
       </div>
       <div class="bg"></div>
     </div>
+  </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
