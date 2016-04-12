@@ -38,7 +38,6 @@
   font-size: $form-input-font-size
   border-radius: $form-input-border-radius
   background-color: $form-input-background-color
-  overflow: hidden
 
   .form-input-marker 
     background-color: $form-input-marker-background-color
@@ -53,40 +52,54 @@
     padding-right: 1.5em
     width: 70%
 
+  .error
+    display: none
+
+  &.invalid
+    background-color: $form-input-doc-error
+    .error
+      color: $form-input-doc-error-message
+      display: block
+
 .messages
   padding-top: 0.6em
   float: right
   text-align: right
-  animation-name: upload
-  animation-fill-mode: forwards
-  animation-duration: 8s
-  animation-delay: 2s
-  animation-timing-function: ease-in-out
-  animation-play-state: paused
-  &.play
+  overflow: hidden
+  height: 2em
+  &.play div
     animation-play-state: running
+  &.done div
+    animation-play-state: paused
+    top: -7.4em
   div
-    margin-bottom: .5em
-
-
+    animation-name: upload
+    animation-fill-mode: forwards
+    animation-duration: 8s
+    animation-delay: 2s
+    animation-timing-function: ease-in-out
+    animation-play-state: paused
+    position: relative
+    margin-bottom: 1em
+    
 @keyframes upload 
   0%  
-    margin-top: 0
+    top: 0
   27%
-    margin-top: 0
+    top: 0
   33%  
-    margin-top: -2em
+    top: -2.5em
   59%  
-    margin-top: -2em 
+    top: -2.5em 
   66% 
-    margin-top: -4em
+    top: -4.8em
   93% 
-    margin-top: -4em 
+    top: -4.8em 
   100%  
-    margin-top: -5.8em 
+    top: -7.4em 
 
 
-.form .fa-pencil  
+.form .fa-pencil
   padding-top: 0.2em
 
 .messages,
@@ -106,3 +119,8 @@
 
 .fa-check
   color: #00b200
+
+.error
+  position: relative
+  left: 49em
+  top: -1.5em
